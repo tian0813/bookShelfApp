@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  background: #121212;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.05);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+#bookFormSubmit {
+  background: #1976d2;
+}
+
+#bookFormSubmit:hover {
+  background: #1565c0;
+}
+
+#searchSubmit {
+  background: #388e3c;
+}
+
+#searchSubmit:hover {
+  background: #2e7d32;
+}
+
+button[data-testid="bookItemIsCompleteButton"] {
+  background: #1976d2;
+}
+
+button[data-testid="bookItemIsCompleteButton"]:hover {
+  background: #1565c0;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+  background: #d32f2f;
+}
+
+button[data-testid="bookItemDeleteButton"]:hover {
+  background: #b71c1c;
+}
+
+button[data-testid="bookItemEditButton"] {
+  background: #fbc02d;
+  color: black;
+}
+
+button[data-testid="bookItemEditButton"]:hover {
+  background: #f9a825;
+}
+
+#incompleteBookList, #completeBookList {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+[data-testid="bookItem"] {
+  background: #222;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-left: 5px solid #fbc02d;
+  border-radius: 6px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+}
